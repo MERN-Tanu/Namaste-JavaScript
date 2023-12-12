@@ -11,9 +11,9 @@ The call function is used to invoke a function immediately and change the contex
 func.call(thisObj, args1, args2, ...);
 ```
 
-func: The function to be invoked.
-thisObj: The object or value to replace the this keyword inside the function.
-args1, args2, ...: Arguments to be passed to the invoking function with the changed this object.
+**func:** The function to be invoked.
+**thisObj:** The object or value to replace the this keyword inside the function.
+**args1, args2, ...:** Arguments to be passed to the invoking function with the changed this object.
 Example:
 
 
@@ -35,19 +35,19 @@ const newBrand = new setBrand('Brand1');
 
 2. **apply Function:**
    
-The apply function is similar to call, but it allows you to pass an array as the argument list. Here is the syntax:
+  The apply function is similar to call, but it allows you to pass an array as the argument list. Here is the syntax:
 
 
 ```javascript
 func.apply(thisObj, argumentsArray);
 ```
-func: The function to be invoked.
-thisObj: The object or value to replace the this keyword inside the function.
-argumentsArray: An array of arguments to be passed to the invoking function.
+**func:** The function to be invoked.
+**thisObj:** The object or value to replace the this keyword inside the function.
+**argumentsArray:** An array of arguments to be passed to the invoking function.
 Example:
 
 ```javascript
-function setBrand(brand){
+   function setBrand(brand){
 	Car.apply(this, ["convertible", "petrol"]);
 	this.brand = brand;
 	console.log(`Car details = `, this);
@@ -63,9 +63,9 @@ It does not invoke the function immediately but returns a new function that can 
 ```javascript
 const newFunc = func.bind(thisObj, arg1, arg2, ..., argN);
 ```
-func: The function for which you want to set the this context.
-thisObj: The object or value to replace the this keyword inside the function.
-arg1, arg2, ..., argN: Optional arguments to be pre-set for the function.
+**func:** The function for which you want to set the this context.
+**thisObj:** The object or value to replace the this keyword inside the function.
+**arg1, arg2, ..., argN:** Optional arguments to be pre-set for the function.
 Example:
 
 ```javascript
