@@ -12,8 +12,11 @@ func.call(thisObj, args1, args2, ...);
 ```
 
 **func:** The function to be invoked.
+
 **thisObj:** The object or value to replace the this keyword inside the function.
+
 **args1, args2, ...:** Arguments to be passed to the invoking function with the changed this object.
+
 Example:
 
 
@@ -42,8 +45,11 @@ const newBrand = new setBrand('Brand1');
 func.apply(thisObj, argumentsArray);
 ```
 **func:** The function to be invoked.
+
 **thisObj:** The object or value to replace the this keyword inside the function.
+
 **argumentsArray:** An array of arguments to be passed to the invoking function.
+
 Example:
 
 ```javascript
@@ -57,6 +63,7 @@ const newBrand = new setBrand('Brand1');
 ```
 
 **3. bind Function:**
+
 The bind function creates a new function with a specified this value and optional arguments.
 It does not invoke the function immediately but returns a new function that can be executed later. Here is the syntax:
 
@@ -64,8 +71,11 @@ It does not invoke the function immediately but returns a new function that can 
 const newFunc = func.bind(thisObj, arg1, arg2, ..., argN);
 ```
 **func:** The function for which you want to set the this context.
+
 **thisObj:** The object or value to replace the this keyword inside the function.
+
 **arg1, arg2, ..., argN:** Optional arguments to be pre-set for the function.
+
 Example:
 
 ```javascript
